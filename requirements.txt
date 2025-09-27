@@ -1,0 +1,6 @@
+streamlit
+pandas
+openpyxl
+pynarrative
+plotly
+altair

@@ -6,3 +6,9 @@ plotly
 altair
 gradio
 TfidfVectorizer
+scikit-learn
+datetime
+gradio
+pandas
+scikit-learn
+openpyxl

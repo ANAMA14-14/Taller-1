@@ -5,3 +5,4 @@ pynarrative
 plotly
 altair
 gradio
+TfidfVectorizer

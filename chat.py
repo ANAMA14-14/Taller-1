@@ -40,7 +40,7 @@ pqrs_responses = {
     "solicitar_categoria": "✅ ¡Hola {nombre}! Ahora, por favor, escribe la categoría a la que pertenece tu PQRS:",
     "solicitar_detalle": "👍 ¡Entendido! Por favor, detalla tu PQRS en el campo abierto que tienes a continuación. Cuanta más información, mejor.",
     "confirmacion_final": "🎉 ¡Hecho! Hemos recibido tu PQRS con éxito. Agradecemos tu valiosa retroalimentación. Un agente se comunicará contigo pronto.",
-    "reporte_ventas": "📊 ¡Claro! Puedes ver los reportes de ventas y otros datos de interés en el siguiente link: [Ver Reporte de Ventas](https://ejemplo7storytellingpy-brtsy4qyrbmneg4ynxwz8o.streamlit.app/)",
+    "reporte_ventas": "📊 ¡Claro! Puedes ver los reportes de ventas y otros datos de interés en el siguiente link: [Ver Reporte de Ventas](https://taller-1-juso39rzdoexjudp34ayto.streamlit.app/)",
     "desconocido": "❓ No entendí tu consulta. Por favor, usa palabras clave como 'queja', 'sugerencia', 'felicitación', 'ventas' o 'reportes'."
 }
 
@@ -132,5 +132,6 @@ with gr.Blocks() as demo:
         title="Asistente de experiencia",
         description="Estoy listo para conocer tu experciencia en Meeiko."
     )
+
 
 demo.launch(share=True, debug=True)

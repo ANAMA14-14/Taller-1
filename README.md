@@ -14,7 +14,8 @@ El archivo superstore.csv contiene información de ventas con las siguientes col
 - Relación entre ventas y descuentos
 - Insights automáticos sobre máximos y mínimos
   
-# - 🧠 RequisitosEste proyecto utiliza las siguientes librerías:streamlit
+# - 🧠 RequisitosEste proyecto utiliza las siguientes librerías:
+- streamlit
 - pandas
 - altair
 

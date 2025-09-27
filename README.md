@@ -19,4 +19,4 @@ El archivo superstore.csv contiene información de ventas con las siguientes col
 - pandas
 - altair
 
-#✨ AutoríaDesarrollado por Cuestas Bejarano Deyby Hans y Bernal Marín Ana María como parte de una campaña de storytelling analítico.
+# ✨ AutoríaDesarrollado por Cuestas Bejarano Deyby Hans y Bernal Marín Ana María como parte de una campaña de storytelling analítico.

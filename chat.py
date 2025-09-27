@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Sep 27 08:43:03 2025
-
 @author: cuest
 """
 
@@ -13,9 +12,9 @@ from datetime import datetime
 import os
 
 # ------------------------------
-# Archivo Excel
+# Archivo Excel (ajuste para Hugging Face Spaces → /tmp)
 # ------------------------------
-EXCEL_FILE = "interacciones_chatbot.xlsx"
+EXCEL_FILE = "/tmp/interacciones_chatbot.xlsx"
 
 def save_interaction(user_msg, bot_response):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -47,11 +46,11 @@ pqrs_responses = {
 # ------------------------------
 # Palabras clave y frases de entrenamiento
 # ------------------------------
-# Se mantienen las frases de PQRS
 training_phrases = {
     "saludo": ["hola", "buenas", "qué tal", "hey", "saludos"],
-    "iniciar_pqrs": ["tengo una queja", "quiero hacer un reclamo", "tengo una sugerencia", "quiero dejar una opinión", "necesito reportar un problema", "no estoy conforme", "felicitacion"],
-    # Se añade la intención para ventas y reportes
+    "iniciar_pqrs": ["tengo una queja", "quiero hacer un reclamo", "tengo una sugerencia", 
+                     "quiero dejar una opinión", "necesito reportar un problema", 
+                     "no estoy conforme", "felicitacion"],
     "reportes": ["reporte", "ventas", "informe", "datos", "resultados"],
 }
 
@@ -83,7 +82,6 @@ state = {"step": 0, "data": {}}
 def chatbot(user_input, history):
     global state
     
-    # Lógica para manejar el flujo de PQRS
     if state["step"] == 0:
         intent = predict_intent(user_input)
         
@@ -126,12 +124,12 @@ with gr.Blocks() as demo:
     gr.Markdown("## 🤖 Asistente de experiencia de Meeiko")
     gr.Markdown("Por favor, introduce tu Petición, Queja, Reclamo o Sugerencia.")
     
-    chatbot_ui = gr.ChatInterface(
+    gr.ChatInterface(
         fn=chatbot,
         type="messages",
         title="Asistente de experiencia",
-        description="Estoy listo para conocer tu experciencia en Meeiko."
+        description="Estoy listo para conocer tu experiencia en Meeiko."
     )
 
-
-demo.launch(share=True, debug=True)
+# 🚀 Importante: en Hugging Face NO usar share=True
+demo.launch()

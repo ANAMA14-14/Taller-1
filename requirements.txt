@@ -12,3 +12,8 @@ gradio
 pandas
 scikit-learn
 openpyxl
+gradio>=4.0.0
+pandas
+scikit-learn
+openpyxl
+

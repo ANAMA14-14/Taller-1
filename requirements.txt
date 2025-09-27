@@ -4,3 +4,4 @@ openpyxl
 pynarrative
 plotly
 altair
+gradio

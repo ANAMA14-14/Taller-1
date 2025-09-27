@@ -1,4 +1,8 @@
-📊 Dataset
+# 📊 Storytelling de Ventas
+
+Este dashboard interactivo analiza ventas y descuentos por país y categoría usando datos precargados en el repositorio.
+Dataset
+
 El archivo superstore.csv contiene información de ventas con las siguientes columnas clave:- Country: país donde se realizó la venta
 - Category: categoría del producto
 - Sales: monto de la venta
